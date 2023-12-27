@@ -1,6 +1,6 @@
 {
   "name": "normalizr",
-  "version": "3.6.2",
+  "version": "3.6.3",
   "description": "Normalizes and denormalizes JSON according to schema for Redux and Flux applications",
   "bugs": {
     "url": "https://github.com/paularmstrong/normalizr/issues"
@@ -24,14 +24,10 @@
     "LICENSE",
     "README.md"
   ],
-  "main": "dist/normalizr.js",
-  "module": "dist/normalizr.es.js",
+  "main": "src/index.js",
   "typings": "index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "build": "npm run clean && run-p build:*",
-    "build:development": "NODE_ENV=development rollup -c",
-    "build:production": "NODE_ENV=production rollup -c",
     "clean": "rimraf dist",
     "flow": "flow",
     "flow:ci": "flow check",
